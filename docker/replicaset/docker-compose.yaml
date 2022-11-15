@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+
+  mongors1:
+    container_name: mongors1
+    hostname: mongors1
+    image: mongo:6.0.2-focal
+    volumes:
+      - ./data/mongors1:/data/db
+      - ./init-replicaset.sh:/scripts/init-replicaset.sh
+    networks:
+      - mongo-replicaset
+    ports:
+      - 28001:27017
+    links:
+      - mongors2
+      - mongors3
+    restart: always
+    entrypoint: [ "/usr/bin/mongod", "--bind_ip", "127.0.0.1,localhost,mongors1", "--replSet", "sfeir-school-rs" ]
+
+  mongors2:
+    container_name: mongors2
+    hostname: mongors2
+    image: mongo:6.0.2-focal
+    volumes:
+      - ./data/mongors2:/data/db
+    networks:
+      - mongo-replicaset
+    ports:
+      - 28002:27017
+    restart: always
+    entrypoint: [ "/usr/bin/mongod", "--bind_ip", "127.0.0.1,localhost,mongors2", "--replSet", "sfeir-school-rs" ]
+
+  mongors3:
+    container_name: mongors3
+    hostname: mongors3
+    image: mongo:6.0.2-focal
+    volumes:
+      - ./data/mongors3:/data/db
+    networks:
+      - mongo-replicaset
+    ports:
+      - 28003:27017
+    restart: always
+    entrypoint: [ "/usr/bin/mongod", "--bind_ip", "127.0.0.1,localhost,mongors3", "--replSet", "sfeir-school-rs" ]
+
+networks:
+  mongo-replicaset:
+    driver: bridge

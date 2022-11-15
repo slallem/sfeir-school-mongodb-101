@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+
+  mongo-single:
+    image: mongo:6.0.2-focal
+    restart: always
+    ports:
+      - 27017:27017

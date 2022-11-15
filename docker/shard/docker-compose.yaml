@@ -1,0 +1,88 @@
+version: '3.8'
+
+services:
+
+  mongoconfig1:
+    container_name: mongoconfig1
+    hostname: mongoconfig1
+    image: mongo:6.0.2-focal
+    volumes:
+      - mongoconfig1:/data/db
+      - ./init-replicaset.sh:/scripts/init-replicaset.sh
+    networks:
+      - mongo-shard
+    ports:
+      - 29001:27017
+    restart: always
+    entrypoint: [ "/usr/bin/mongod", "--port", "27017", "--bind_ip", "127.0.0.1,localhost,mongoconfig1", "--configsvr", "--replSet", "configrs" ]
+
+  mongos1:
+    container_name: mongos1
+    hostname: mongos1
+    image: mongo:6.0.2-focal
+    volumes:
+      - mongos1:/data/db
+    networks:
+      - mongo-shard
+    ports:
+      - 29002:27017
+    restart: always
+    depends_on:
+      - mongoconfig1
+      - mongoshard1
+      - mongoshard2
+      - mongoshard3
+    entrypoint: [ "/usr/bin/mongos", "--port", "27017", "--bind_ip", "127.0.0.1,localhost,mongos1", "--configdb", "configrs/mongoconfig1:27017" ]
+
+  mongoshard1:
+    container_name: mongoshard1
+    hostname: mongoshard1
+    image: mongo:6.0.2-focal
+    volumes:
+      - mongoshard1:/data/db
+      - ./init-replicaset.sh:/scripts/init-replicaset.sh
+    networks:
+      - mongo-shard
+    ports:
+      - 29011:27017
+    restart: always
+    entrypoint: [ "/usr/bin/mongod", "--port", "27017", "--bind_ip", "127.0.0.1,localhost,mongoshard1", "--shardsvr", "--replSet", "shardrs1" ]
+
+  mongoshard2:
+    container_name: mongoshard2
+    hostname: mongoshard2
+    image: mongo:6.0.2-focal
+    volumes:
+      - mongoshard2:/data/db
+      - ./init-replicaset.sh:/scripts/init-replicaset.sh
+    networks:
+      - mongo-shard
+    ports:
+      - 29012:27017
+    restart: always
+    entrypoint: [ "/usr/bin/mongod", "--port", "27017", "--bind_ip", "127.0.0.1,localhost,mongoshard2", "--shardsvr", "--replSet", "shardrs2" ]
+
+  mongoshard3:
+    container_name: mongoshard3
+    hostname: mongoshard3
+    image: mongo:6.0.2-focal
+    volumes:
+      - mongoshard3:/data/db
+      - ./init-replicaset.sh:/scripts/init-replicaset.sh
+    networks:
+      - mongo-shard
+    ports:
+      - 29013:27017
+    restart: always
+    entrypoint: [ "/usr/bin/mongod", "--port", "27017", "--bind_ip", "127.0.0.1,localhost,mongoshard3", "--shardsvr", "--replSet", "shardrs3" ]
+
+networks:
+  mongo-shard:
+    driver: bridge
+
+volumes:
+  mongoconfig1:
+  mongos1:
+  mongoshard1:
+  mongoshard2:
+  mongoshard3:
