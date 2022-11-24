@@ -48,22 +48,22 @@ coll.insertMany([
 
 ```
 
-## 3.1 / Single, simple update
+## 1 / Update de champs simples
 
-In the `lab-03` collection from the `school` database, update the following documents using these instructions:
+Dans la collection crée à l'init de ce lab, mettez à jour les documents en suivant ces instructions:
 
-+ Update document with _id `666` and add the field `new` with the boolean value `true`
-+ Update document with _id `666` and remove the whole `user` field
-+ Update all documents with the tag `one` and create a new field `key` with value `rickroll`
-+ Rename the field "user" to "contact" and "tags" to "labels" in all documents   
-+ Update document with _id `42`and set the user name to `l33t`. Create a new document if it does not exists, and add a date_in field only if it's a new document.
++ Mise à jour du document d'_id `666`: ajout du champ `new` avec la valeur `true`
++ Mise à jour du document d'_id `666`: suppression du champ `user`
++ Mise à jour de tous les documents avec le tag `one` et création d'un champ `key` avec la valeur `rickroll`
++ Renommer le champ `user` en `contact` et le champ `tags` en `labels` dans tous les documents
++ Mise à jour du coument d'id `42` et y ajouter le user name `l33t`. Créer un nouveau document s'il n'existe pas, et y ajouter le champ date_in uniquement si c'est une création.
 
-## 3.2 / Array updates
+## 2 / Update dans des tableaux
 
-+ Update all documents with at least one value in `tags` field, and add a new value "four"
-+ Update all documents with exactly 2 in `tags` field, and add a new value "two" *without duplicates*
++ Mettre à jour tous les documents avec au moins une valeur dans `tags` (ou `labels`) et y ajouter la valeur "four"
++ Mettre à jour tous les documents avec exactement 2 éléments dans `tags` (ou `labels`) et y ajouter la valeur "two", sans doublon
 
-## 3.10 / Expert
+## 3 / Expert
 
-+ Update all documents with the tag `one` and create a new field `year` with the **year** part of `date_in`
-+ Update all documents to sort the tags in alphabetical orders
++ Mettre à jour tous les documents avec le tag `one` et y ajouter un champ `year` qui ne contient que la partie "année" de `date_in`
++ Mettre à jour tous les documents et trier les valeurs du champs `tags` par ordre alphabétique
