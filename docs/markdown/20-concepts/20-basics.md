@@ -62,7 +62,7 @@ Notes:
 * Une base de données *schemaless*
 <!-- .element: class="list-fragment" -->
   * En réalité on parle plutôt de *dynamic schema*
-  * Il est aujourd'hui possible de forcer des contraintes sur les documents
+  * Il est aujourd'hui possible de forcer des contraintes sur les documents<br/><br/>
   <!-- .element: class="list-fragment" -->
 * Regrouper les champs ensemble s'ils ont vocation à l'être
 <!-- .element: class="list-fragment" -->
@@ -72,10 +72,10 @@ Notes:
   <!-- .element: class="list-fragment" -->
 * Se poser les questions avant de stocker une donnée dans un document
 <!-- .element: class="list-fragment" -->
-  * est-ce bien sa place ?
-  * est-ce que cette donnée devra être modifiée ? souvent ?
-  * est-ce que cette donnée doit être associée à un timestamp ? doit être historisée ?
-  * est-ce qu'il faut la répliquer à plusieurs endroits ?
+  * Est-ce bien sa place ?
+  * Est-ce que cette donnée devra être modifiée ? Souvent ?
+  * Est-ce que cette donnée doit être associée à un timestamp ? Doit être historisée ?
+  * Est-ce qu'il faut la répliquer à plusieurs endroits ?
   <!-- .element: class="list-fragment" -->
   
 Notes:

@@ -1,7 +1,7 @@
 {
-  "name": "sfeirschoolxxx",
+  "name": "sfeir-school-mongodb-101",
   "version": "1.0.0",
-  "description": "Sfeir School XXX with revealJS",
+  "description": "Sfeir School 101 - MongoDB",
   "scripts": {
     "sass": "sass ./scss/slides.scss:./css/slides.css --source-map --watch",
     "sass-once": "sass ./scss/slides.scss:./css/slides.css --source-map",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sfeir-open-source/sfeir-school-template.git"
+    "url": "git+https://github.com/sfeir-open-source/TODO:CHANGEME"
   },
   "keywords": [
     "xxx",
@@ -21,9 +21,9 @@
   "author": "jefbinomed",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sfeir-open-source/sfeir-school-template/issues"
+    "url": "https://github.com/sfeir-open-source/TODO:CHANGEME/issues"
   },
-  "homepage": "https://github.com/sfeir-open-source/sfeir-school-template",
+  "homepage": "https://github.com/sfeir-open-source/TODO:CHANGEME",
   "dependencies": {
     "sfeir-school-theme": "^3.0.0"
   },
