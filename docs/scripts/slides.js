@@ -4,8 +4,7 @@ import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-s
 function introSlides() {
   const directory = '00-intro';
   return [
-    `${directory}/00-intro.md`,
-    `${directory}/01-content.md`
+    `${directory}/00-intro.md`
   ];
 }
 
@@ -63,6 +62,7 @@ function aggregationSlides() {
     `${directory}/10-concept.md`,
     `${directory}/20-stages.md`,
     `${directory}/30-operators.md`,
+    `${directory}/40-lab.md`
   ];
 }
 
