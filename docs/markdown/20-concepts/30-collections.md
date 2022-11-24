@@ -87,9 +87,7 @@ Notes:
 ## Création et insertion dans une collection *timeseries*
 
 ```javascript
-
-db.createCollection(
-    "weather",
+db.createCollection("weather",
     {
        timeseries: {
           timeField: "timestamp",
@@ -110,9 +108,10 @@ db.weather.insertMany([
       "timestamp": ISODate("2022-11-25T04:00:00.000Z"),
       "temp": 632
    }
-   ]
-);
+]);
 ```
+<!-- .element: class="full-height" -->
+
 
 ##--##
 <!-- .slide: class="with-code"-->
