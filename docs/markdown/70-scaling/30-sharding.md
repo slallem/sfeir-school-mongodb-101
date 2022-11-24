@@ -19,11 +19,11 @@ Notes:
 
 Un *sharded cluster* est composé des éléments suivants:<br/><br/>
 
-* un replicaset de *config servers*
-    * ce sont des mongod qui portent une base de données qui contient les metadata du cluster<br/><br/>
-* un replicaset par *shard*
-    * les données peuvent être éclatés entre les shards (ou non, c'est optionnel)<br/><br/>
-* des *routeurs*, les `mongos`
+* Un replicaset de *config servers*
+    * Ce sont des mongod qui portent une base de données qui contient les metadata du cluster<br/><br/>
+* Un replicaset par *shard*
+    * Les données peuvent être éclatés entre les shards (ou non, c'est optionnel)<br/><br/>
+* Des *routeurs*, les `mongos`
 
 Notes:
 - on ne monte généralement pas de sharded cluster pour moins de 3 shards
@@ -38,8 +38,8 @@ Notes:
 
 Pour sharder une collection, il faut:
 
-* activer le sharding sur la **base** avec `sh.enableSharding()`
-* sharder la **collection** en créant l'index de sharding avec `sh.shardCollection(ns, index)`
+* Activer le sharding sur la **base** avec `sh.enableSharding()`
+* Sharder la **collection** en créant l'index de sharding avec `sh.shardCollection(ns, index)`
 
 <br><br>
 Mais avant de songer à sharder une collection, il faut d'abord définir sa *shard key*...

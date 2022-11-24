@@ -21,7 +21,7 @@
 <!-- .element: class="list-fragment" -->
   * Pour les features disponibles maintenant ou dans le futur
   * Pour atteindre les performances qu'on cherche ou dont on rêve
-  * Par qu'on veut pouvoir scaler et ne pas passer son temps en maintenance
+  * Parce qu'on veut pouvoir scaler et ne pas passer son temps en maintenance
   <!-- .element: class="list-fragment" -->
 
 Notes:
@@ -54,7 +54,7 @@ Notes:
 * La *Flexibilité* du document model<br><br>
 * La *Lisibilité* des données<br><br>
 * La *Scalabilité*<br><br>
-* La *Rapidité* de mise en place
+* La *Rapidité* de mise en place<br><br>
 * La *Communauté* et le taux d'adoption
 <!-- .element: class="list-fragment" -->
 
