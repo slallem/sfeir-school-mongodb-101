@@ -73,7 +73,7 @@ Notes:
 * Se poser les questions avant de stocker une donnée dans un document
 <!-- .element: class="list-fragment" -->
   * Est-ce bien sa place ?
-  * Est-ce que cette donnée devra être modifiée ? sSouvent ?
+  * Est-ce que cette donnée devra être modifiée ? Souvent ?
   * Est-ce que cette donnée doit être associée à un timestamp ? Doit être historisée ?
   * Est-ce qu'il faut la répliquer à plusieurs endroits ?
   <!-- .element: class="list-fragment" -->
