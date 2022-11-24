@@ -1,5 +1,5 @@
 <!-- .slide: class="sfeir-basic-slide"-->
-# Le Query Plan Planner
+# Le Query Planner
 ![full-center h-800](assets/images/mongodb/indexation-performance/query-planner-diagram.svg)
 Notes: 
 L'optimiseur de requêtes MongoDB traite les requêtes et choisit le plan de requête le plus efficace pour une requête en fonction des index disponibles. Le système de requête utilise ensuite ce plan de requête à chaque exécution de la requête.

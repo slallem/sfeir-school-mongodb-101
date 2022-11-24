@@ -5,7 +5,7 @@
 # Qu'est ce qu'un index
 - Un index est une structure de données utilisée et entretenue par le système <br/><br/>
 - Il permet:
-    - Éviter un scan de collection
+    - Éviter un scan de collection "COLLSCAN"
     - Localiser plus rapidement les documents
     - Améliorer la performance
 
