@@ -118,7 +118,19 @@ Faire un backup de base
 mongodump mongodb://localhost:27017 --gzip --archive=backup.archive.gz --db school
 ```
 
-
 Notes:
 - Mongoimport ne supporte les arrays JSON que de 16Mo max
 - Convertir les fichiers en JSONL avec jq pour pouvoir injecter + de volume
+
+##--##
+
+<!-- .slide: class="exercice" -->
+
+# Importer des données
+## Lab
+<br/>
+
+1. importer des collections
+2. importer un fichier JSON
+
+<br/>
