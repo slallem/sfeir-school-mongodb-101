@@ -65,7 +65,7 @@ Studio3T est l'IDE le plus complet, plébiscité depuis longtemps à cause notam
 
 Si vous travaillez avec les IDE Jetbrains, IntelliJ dispose d'une feature "database tools" vraiment très pratique.
 
-Cette option n'est pas disponible dans la version IntelliJ Ultimate.
+Cette option n'est disponible que dans la version IntelliJ Ultimate.
 
 * Simple
 * Intégré à votre code/projet
