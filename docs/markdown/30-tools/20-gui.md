@@ -1,7 +1,7 @@
 <!-- .slide -->
 # MongoDB Compass
 
-MongoDB est le GUI MongoDB développé et fourni par MongoDB.
+MongoDB Compass est le GUI MongoDB développé et fourni par MongoDB.
 
 Il fonctionne avec les clusters Atlas mais pas uniquement.
 
@@ -58,3 +58,35 @@ Studio3T est l'IDE le plus complet, plébiscité depuis longtemps à cause notam
 
 # Studio3T: Visual aggregation explain tool
 ![center h-600](./assets/images/mongodb/studio3T/studio3T-02.webp)
+
+##--##
+<!-- .slide -->
+# IntelliJ Database Tools
+
+Si vous travaillez avec les IDE Jetbrains, IntelliJ dispose d'une feature "database tools" vraiment très pratique.
+
+Cette option n'est pas disponible dans la version IntelliJ Ultimate.
+
+* Simple
+* Intégré à votre code/projet
+* Commandes faciles à retrouver et rejouer (fichiers)
+* Faciles à exécuter (Ctrl+Enter) "à la TOAD"
+* Autocomplétion
+* Copie de données de base à base en quelques clics (multi-bases).
+* Import/export de données multi-formats
+<!-- .element: class="list-fragment" -->
+
+##--##
+
+# IntelliJ Database Tools : Database connection
+![center h-800](./assets/images/mongodb/intellij/connection.png)
+
+##--##
+
+# IntelliJ Database Tools : Console
+![center h-800](./assets/images/mongodb/intellij/console.png)
+
+##--##
+
+# IntelliJ Database Tools
+![center h-800](./assets/images/mongodb/intellij/data-export.png)

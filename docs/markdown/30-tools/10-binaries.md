@@ -98,7 +98,7 @@ db.getCollectionNames();
 ##--##
 <!-- .slide: class="with-code"-->
 
-Importer un fichier JSONL
+Importer un fichier JSONL (cf. https://jsonlines.org/)
 ```bash
 # Importer un fichier json en passant par jq pour le convertir en jsonl
 jq -c '.[]' < data/days.json | mongoimport --port 27017 --db school --collection days --drop --maintainInsertionOrder

@@ -2,19 +2,17 @@
 
 # Who am I ?
 
-![speaker](./assets/images/hmd.png)
-![first-badge](./assets/images/badges/mongodb-certified-developer.png)
+![speaker](./assets/images/slallem.jpg)
 ![second-badge](./assets/images/badges/mongodb-certified-si-architect.png)
-![third-badge](./assets/images/badges/gcp-data-engineer.png)
 ![company](./assets/images/logo-sfeir-blanc.png)
 
-## Henri-Maxime Ducoulombier
+## Stéphane <span>LALLEMAGNE</span>
 
-### Senior Data Engineer
+### Senior Staff Engineer
 
 <!-- .element: class="icon-rule icon-first" -->
 
-### @henrimaxime
+### lallemagne.s@sfeir.com
 
 <!-- .element: class="icon-twitter icon-second" -->
 

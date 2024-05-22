@@ -13,7 +13,7 @@ Il existe plusieurs manières d'insérer des documents dans une base MongoDB:
 <!-- .element: class="list-fragment" -->
 
 Notes:
-- mentionner également le $out et le $merge du framework d'aggréation
+- mentionner également le $out et le $merge du framework d'aggrégation
 - Retryable writes à évoquer
 ##--##
 

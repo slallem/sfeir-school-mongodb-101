@@ -24,7 +24,7 @@ Notes:
 ##--##
 <!-- .slide class="with-code"-->
 
-## Les collections standards
+## Les collections standard
 
 * Créées à la volée la première fois qu'on y écrit<br/><br/>
 * Taille maximale d'un document: 16Mo<br/><br/>

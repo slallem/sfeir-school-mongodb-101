@@ -15,7 +15,7 @@
   * NoSQL (Not Only Structured Query Language)<br/><br/>
   <!-- .element: class="list-fragment" -->
 
-* Occupent une place majeure dans les stacks techiques<br/><br/>
+* Occupent une place majeure dans les stacks techniques<br/><br/>
 <!-- .element: class="list-fragment" -->
 * Son choix est un choix technique critique
 <!-- .element: class="list-fragment" -->
@@ -35,7 +35,7 @@ Notes:
 
 * Base de données NOSQL orientée *document*<br/><br/>
 * Écrite en C++, GO, Javascript et Python par la société Mongo<br/><br/>
-* Première version en 2009, version actuelle 6.0 (été 2022)
+* Première version en 2009, version actuelle 7.0.8 (stable), 8.0 en preview (mai 2024)
 <!-- .element: class="list-fragment" -->
   * Support des transactions depuis 2018 (4.0)
   * MongoDB Atlas lancé en 2017
@@ -75,7 +75,7 @@ Notes:
   * et...<br/><br/>
   <!-- .element: class="list-fragment" -->
 * MongoDB Atlas: cloud database et data services<br/><br/>
-* MongoDB Compass: IDE fournit par MongoDB<br/><br/>
+* MongoDB Compass: IDE fourni par MongoDB<br/><br/>
 * MongoDB University: plateforme de formation et certification<br/><br/>
 <!-- .element: class="list-fragment" -->
 

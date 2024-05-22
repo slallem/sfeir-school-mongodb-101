@@ -11,7 +11,7 @@ function introSlides() {
 function speakerSlides() {
   const directory = '10-speakers';
   return [
-    `${directory}/10-speaker-hmd.md`,
+    `${directory}/10-speaker.md`,
   ];
 }
 
