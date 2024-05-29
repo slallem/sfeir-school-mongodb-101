@@ -4,7 +4,7 @@
 
 Pour ce lab, nous effectuerons les requêtes sur un cluster MongoDB Atlas dont voici l'URL:
 
-`mongodb+srv://sfeir-school-mongodb-10.66yzg.mongodb.net/school`
+`mongodb+srv://sfeir-school-mongodb-bx.1edkvfs.mongodb.net/school`
 
 Vous pouvez vous y connecter via `mongosh` ou avec MongoDB Compass.
 

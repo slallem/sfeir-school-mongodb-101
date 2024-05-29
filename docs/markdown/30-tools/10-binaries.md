@@ -60,10 +60,10 @@ Démarrer une instance simple avec docker
 
 ```bash
 # Démarrer l'instance
-docker-compose -f ./docker/docker-single.yaml up
+docker-compose -f ./docker/single/docker-compose.yaml up
 
 # Arrêter l'instance
-docker-compose -f ./docker/docker-single.yaml down
+docker-compose -f ./docker/single/docker-compose.yaml down
 ```
 
 Notes:
@@ -79,7 +79,7 @@ Se connecter à une instance
 mongosh school --port 27017 --quiet
 
 # À une instance Atlas
-mongosh "mongodb+srv://sfeir-school-mongodb-10.66yzg.mongodb.net/school" --apiVersion 1 --username school
+mongosh "mongodb+srv://sfeir-school-mongodb-bx.1edkvfs.mongodb.net/school" --apiVersion 1 --username school
 ```
 
 Lister et choisir une base de données
